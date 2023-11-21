@@ -93,69 +93,80 @@
 
                         <td colspan="4">  
 
-                         <form 
-    action="https://jsonplaceholder.typicode.com/posts"
-    method="POST" 
-    name="form">
-         <fieldset>
-<!-- Создаем заголовок группы -->
-<legend>Оставить комментарий</legend>
+                          <form 
+                              action="https://jsonplaceholder.typicode.com/posts"
+                              method="POST" 
+                              name="form">
+                                   <fieldset>
+                                       <!-- Создаем заголовок группы -->
+                                       <legend>Оставить комментарий</legend>
+                                       
+                                       <label>Ваше имя * <br>
+                                        <input 
+                                       type="text"
+                                       name="name"
+                                       minlength="3" 
+                                       maxlength="30"
+                                       required
+                                       placeholder="Введите имя">
+                                       </label>
+                                       
+                                       <br><br>
+                                       
+                                       <label>E-mail * <br> 
+                                       <input 
+                                       type="email" 
+                                       name="email"
+                                       minlength="8" 
+                                       maxlength="30"
+                                       required
+                                       placeholder="Введите e-mail">
+                                       </label>
+                                       
+                                       <br>
+                                       
+                                       
+                                           <label><i>Содержание этого поля является приватным и&nbsp;не&nbsp;предназначено для показа.</i></label>
+                                       
+                                       
+                                       
+                                       <br><br>
+                                       
+                                       
+                                       
+                                       <!-- Связываем текст с текстовым полем -->
+                                       <label for="comment"> 
+                                       Комментарий *
+                                       </label> 
+                                       
+                                       <br>
+                                       
+                                       <textarea id="comment" name="comment" required placeholder="Что мы можем улучшить?">
+                                       </textarea>
 
-<label>Ваше имя * <br>
- <input 
-type="text"
-name="name"
-minlength="3" 
-maxlength="30"
-required
-placeholder="Введите имя">
-</label>
+                                      <br><br>
+                                      
+                                      <label>
+                                          <input 
+                                              type="checkbox" 
+                                              name=" morning " 
+                                              value=" morning "> 
+                                              Я согласен на обработку персональных данных
+                                      </label>
 
-<br><br>
-
-<label>E-mail * <br> 
-<input 
-type="email" 
-name="email"
-minlength="8" 
-maxlength="30"
-required
-placeholder="Введите e-mail">
-</label>
-
-<br>
-
-
-    <label><i>Содержание этого поля является приватным и&nbsp;не&nbsp;предназначено для показа.</i></label>
-
-
-
-<br><br>
-
-
-
-<!-- Связываем текст с текстовым полем -->
-<label for="comment"> 
-Комментарий *
-</label> 
-
-<br>
-
-<textarea id="comment" name="comment" required placeholder="Что мы можем улучшить?">
-</textarea>
-
-<br><br> 
-
-
-<!-- Создаем кнопку отправки формы -->
-<button 
-type="submit" 
-name="submit_button">
-Отправить
-</button>
-   
-    </fieldset>
-</form>
+                                    
+                                       <br><br> 
+                                       
+                                       
+                                       <!-- Создаем кнопку отправки формы -->
+                                       <button 
+                                       type="submit" 
+                                       name="submit_button">
+                                       Отправить
+                                       </button>
+                                          
+                              </fieldset>
+                          </form>
                          <br><br>
                            <font color="white">&copy; Медквест, 2023</font>
                         </td>
