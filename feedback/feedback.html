@@ -89,7 +89,82 @@
                     <tr bgcolor="black">
 
                         <td colspan="4">  
-                           <font color="white">&copy; Медквест, 2023</font>
+                           <font color="white">
+                            <form action="https://jsonplaceholder.typicode.com/posts"
+                                method="POST"
+                                name="form">
+
+                                   <fieldset>
+                                    <!-- Создаем заголовок группы -->
+                                    <legend>Оставить отзыв</legend>
+
+                                    <label>
+                                        Имя * <br>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            minlength="3"
+                                            maxlength="30"
+                                            required
+                                            placeholder="Введите имя">
+                                    </label>
+                                    <br><br>
+                                    <label>
+                                        Фамилия * <br>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            minlength="3"
+                                            maxlength="30"
+                                            required
+                                            placeholder="Выводится первая буква">
+                                    </label>
+
+                                    <br><br>
+
+                                    <label>
+                                        E-mail * <br>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            minlength="8"
+                                            maxlength="30"
+                                            required
+                                            placeholder="Введите e-mail">
+                                        <br>
+                                        <i>
+                                            Содержание этого поля является приватным
+                                            и&nbsp;не&nbsp;предназначено для показа.
+                                        </i>
+                                    </label>
+
+                                    <br><br>
+
+                                    <!-- Связываем текст с текстовым полем -->
+                                    <label for="comment"> Отзыв * </label>
+
+                                    <br>
+
+                                    <textarea
+                                        id="comment"
+                                        name="comment"
+                                        required
+                                        placeholder="Напишите отзыв по работе нашей клиники"></textarea>
+
+                                    <br><br>
+
+                                    <!-- Создаем кнопку отправки формы -->
+
+                                    <button 
+                                        type="submit" 
+                                        name="submit_button">
+                                            Отправить
+                                    </button>
+
+                                </fieldset>
+                            </form>
+                           <br><br> 
+                               &copy; Медквест, 2023</font>
                         </td>
 
 
